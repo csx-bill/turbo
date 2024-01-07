@@ -23,7 +23,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,19 +57,19 @@ public class CallActivityDemoRunner implements CommandLineRunner {
 
         LOGGER.info("Turbo definition:");
 
-        createFlow();
+        //createFlow();
 
-        updateFlow();
+        //updateFlow();
 
-        deployFlow();
+        //deployFlow();
 
         LOGGER.info("Turbo runtime:");
 
         // Show authorized situations
-        startProcessToEnd(true);
+        //startProcessToEnd(true);
 
         // Show unauthorized situations
-        startProcessToEnd(false);
+        //startProcessToEnd(false);
     }
 
     public void createFlow() {

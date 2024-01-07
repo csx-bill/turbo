@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * demo页面中没有呈现但接口中支持的字段（例如租户标识），使用方可以根据自己业务需求酌情添加

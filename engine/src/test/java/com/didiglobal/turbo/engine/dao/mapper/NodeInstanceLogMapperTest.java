@@ -7,7 +7,7 @@ import com.didiglobal.turbo.engine.util.EntityBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("com.didiglobal.turbo.engine")
 @MapperScan("com.didiglobal.turbo.engine.dao")
-@EnableAutoConfiguration(exclude = {DruidDataSourceAutoConfigure.class})
+@EnableAutoConfiguration//(exclude = {DruidDataSourceAutoConfigure.class})
 public class TurboEngineConfig {
 
 }

@@ -13,7 +13,7 @@ import com.didiglobal.turbo.engine.util.StrongUuidGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 public abstract class RuntimeExecutor {
 

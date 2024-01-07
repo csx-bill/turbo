@@ -26,7 +26,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -104,7 +104,7 @@ public class FlowServiceImpl {
             FlowModuleResponse getFlowModuleResponse = new FlowModuleResponse();
             BeanUtils.copyProperties(flowDefinitionPO, getFlowModuleResponse);
             QueryWrapper<FlowDeploymentPO> flowDeployQuery = buildCountFlowDeployQueryWrapper(flowDefinitionPO.getFlowModuleId());
-            int count = flowDeploymentDAO.count(flowDeployQuery);
+            long count = flowDeploymentDAO.count(flowDeployQuery);
             if (count >= 1) {
                 //4 已发布
                 getFlowModuleResponse.setStatus(FlowModuleStatusEnum.PUBLISHED.getValue());

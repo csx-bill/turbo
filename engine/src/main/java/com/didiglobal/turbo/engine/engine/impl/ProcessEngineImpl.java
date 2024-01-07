@@ -7,7 +7,7 @@ import com.didiglobal.turbo.engine.processor.RuntimeProcessor;
 import com.didiglobal.turbo.engine.result.*;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 @Service
 public class ProcessEngineImpl implements ProcessEngine {

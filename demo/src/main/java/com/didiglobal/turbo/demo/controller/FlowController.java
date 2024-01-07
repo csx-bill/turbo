@@ -8,6 +8,7 @@ import com.didiglobal.turbo.engine.result.CreateFlowResult;
 import com.didiglobal.turbo.engine.result.DeployFlowResult;
 import com.didiglobal.turbo.engine.result.FlowModuleResult;
 import com.didiglobal.turbo.engine.result.UpdateFlowResult;
+import jakarta.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 
 /**

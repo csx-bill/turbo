@@ -17,7 +17,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 
 public class DefinitionProcessorTest extends BaseTest {

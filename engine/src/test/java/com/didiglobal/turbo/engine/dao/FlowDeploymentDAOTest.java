@@ -6,7 +6,7 @@ import com.didiglobal.turbo.engine.util.EntityBuilder;
 import org.junit.Assert;
 import org.junit.Test;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 
 public class FlowDeploymentDAOTest extends BaseTest {
