@@ -97,9 +97,9 @@ public class FlowExecutor extends RuntimeExecutor {
             flowInstancePO.setParentFlowInstanceId(parentRuntimeContext.getFlowInstanceId());
         }
         flowInstancePO.setStatus(FlowInstanceStatus.RUNNING);
-        Date currentTime = new Date();
-        flowInstancePO.setCreateTime(currentTime);
-        flowInstancePO.setModifyTime(currentTime);
+//        Date currentTime = new Date();
+//        flowInstancePO.setCreateTime(currentTime);
+//        flowInstancePO.setModifyTime(currentTime);
         return flowInstancePO;
     }
 
@@ -129,7 +129,7 @@ public class FlowExecutor extends RuntimeExecutor {
 
         instanceDataPO.setNodeInstanceId(StringUtils.EMPTY);
         instanceDataPO.setNodeKey(StringUtils.EMPTY);
-        instanceDataPO.setCreateTime(new Date());
+        //instanceDataPO.setCreateTime(new Date());
         instanceDataPO.setType(InstanceDataType.INIT);
         return instanceDataPO;
     }
@@ -290,7 +290,7 @@ public class FlowExecutor extends RuntimeExecutor {
         instanceDataPO.setNodeInstanceId(nodeInstanceId);
         instanceDataPO.setNodeKey(nodeKey);
         instanceDataPO.setType(InstanceDataType.COMMIT);
-        instanceDataPO.setCreateTime(new Date());
+        //instanceDataPO.setCreateTime(new Date());
 
         instanceDataPO.setInstanceDataId(newInstanceDataId);
         instanceDataPO.setInstanceData(InstanceDataUtil.getInstanceDataListStr(instanceDataMap));
@@ -607,11 +607,11 @@ public class FlowExecutor extends RuntimeExecutor {
         BeanUtils.copyProperties(nodeInstanceBO, nodeInstancePO);
         nodeInstancePO.setFlowInstanceId(runtimeContext.getFlowInstanceId());
         nodeInstancePO.setFlowDeployId(runtimeContext.getFlowDeployId());
-        nodeInstancePO.setTenant(runtimeContext.getTenant());
+        nodeInstancePO.setTenantId(runtimeContext.getTenant());
         nodeInstancePO.setCaller(runtimeContext.getCaller());
-        Date currentTime = new Date();
-        nodeInstancePO.setCreateTime(currentTime);
-        nodeInstancePO.setModifyTime(currentTime);
+//        Date currentTime = new Date();
+//        nodeInstancePO.setCreateTime(currentTime);
+//        nodeInstancePO.setModifyTime(currentTime);
         return nodeInstancePO;
     }
 

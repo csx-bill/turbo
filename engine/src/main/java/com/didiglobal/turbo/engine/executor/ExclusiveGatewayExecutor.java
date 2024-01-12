@@ -25,7 +25,6 @@ import org.springframework.stereotype.Service;
 import jakarta.annotation.Resource;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -108,7 +107,7 @@ public class ExclusiveGatewayExecutor extends ElementExecutor implements Initial
         instanceDataPO.setNodeInstanceId(runtimeContext.getCurrentNodeInstance().getNodeInstanceId());
         instanceDataPO.setNodeKey(runtimeContext.getCurrentNodeModel().getKey());
         instanceDataPO.setType(InstanceDataType.HOOK);
-        instanceDataPO.setCreateTime(new Date());
+        //instanceDataPO.setCreateTime(new Date());
         return instanceDataPO;
     }
 

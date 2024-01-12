@@ -181,10 +181,8 @@ public class SyncSingleCallActivityExecutor extends AbstractCallActivityExecutor
         flowInstanceMappingPO.setNodeInstanceId(currentNodeInstance.getNodeInstanceId());
         flowInstanceMappingPO.setSubFlowInstanceId(subFlowInstanceId);
         flowInstanceMappingPO.setType(FlowInstanceMappingType.EXECUTE);
-        flowInstanceMappingPO.setTenant(runtimeContext.getTenant());
+        flowInstanceMappingPO.setTenantId(runtimeContext.getTenant());
         flowInstanceMappingPO.setCaller(runtimeContext.getCaller());
-        flowInstanceMappingPO.setCreateTime(new Date());
-        flowInstanceMappingPO.setModifyTime(new Date());
         flowInstanceMappingDAO.save(flowInstanceMappingPO);
     }
 
@@ -288,8 +286,8 @@ public class SyncSingleCallActivityExecutor extends AbstractCallActivityExecutor
         BeanUtils.copyProperties(oldFlowInstanceMappingPO, newFlowInstanceMappingPO);
         newFlowInstanceMappingPO.setId(null);
         newFlowInstanceMappingPO.setNodeInstanceId(newNodeInstanceId);
-        newFlowInstanceMappingPO.setCreateTime(new Date());
-        newFlowInstanceMappingPO.setModifyTime(new Date());
+//        newFlowInstanceMappingPO.setCreateTime(new Date());
+//        newFlowInstanceMappingPO.setModifyTime(new Date());
         flowInstanceMappingDAO.insert(newFlowInstanceMappingPO);
     }
 

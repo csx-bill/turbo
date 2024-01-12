@@ -56,9 +56,9 @@ public class DefinitionProcessor {
             String flowModuleId = idGenerator.getNextId();
             flowDefinitionPO.setFlowModuleId(flowModuleId);
             flowDefinitionPO.setStatus(FlowDefinitionStatus.INIT);
-            Date date = new Date();
-            flowDefinitionPO.setCreateTime(date);
-            flowDefinitionPO.setModifyTime(date);
+//            Date date = new Date();
+//            flowDefinitionPO.setCreateTime(date);
+//            flowDefinitionPO.setModifyTime(date);
 
             int rows = flowDefinitionDAO.insert(flowDefinitionPO);
             if (rows != 1) {
@@ -82,7 +82,7 @@ public class DefinitionProcessor {
             FlowDefinitionPO flowDefinitionPO = new FlowDefinitionPO();
             BeanUtils.copyProperties(updateFlowParam, flowDefinitionPO);
             flowDefinitionPO.setStatus(FlowDefinitionStatus.EDITING);
-            flowDefinitionPO.setModifyTime(new Date());
+            //flowDefinitionPO.setModifyTime(new Date());
 
             int rows = flowDefinitionDAO.updateByModuleId(flowDefinitionPO);
             if (rows != 1) {
